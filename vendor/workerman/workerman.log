@@ -1,0 +1,192 @@
+2019-12-10 06:40:30 pid:1 Worker process terminated with ERROR: E_ERROR "Using $this when not in object context in C:\wamp\www\project\Gomoku\Applications\Gomoku\Events.php on line 91"
+2019-12-10 06:46:43 pid:1 Worker process terminated with ERROR: E_ERROR "Using $this when not in object context in C:\wamp\www\project\Gomoku\Applications\Gomoku\Events.php on line 91"
+2019-12-10 06:48:16 pid:1 Worker process terminated with ERROR: E_ERROR "Using $this when not in object context in C:\wamp\www\project\Gomoku\Applications\Gomoku\Events.php on line 91"
+2019-12-10 06:49:30 pid:1 Worker process terminated with ERROR: E_ERROR "Using $this when not in object context in C:\wamp\www\project\Gomoku\Applications\Gomoku\Events.php on line 91"
+2019-12-10 06:49:31 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://doc2.workerman.net/send-buffer-to-worker-fail.html
+2019-12-10 06:49:31 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://doc2.workerman.net/send-buffer-to-worker-fail.html
+2019-12-10 06:52:17 pid:1 Worker process terminated with ERROR: E_ERROR "Using $this when not in object context in C:\wamp\www\project\Gomoku\Applications\Gomoku\Events.php on line 91"
+2019-12-10 06:55:19 pid:1 Worker process terminated with ERROR: E_ERROR "Using $this when not in object context in C:\wamp\www\project\Gomoku\Applications\Gomoku\Events.php on line 91"
+2019-12-10 06:55:20 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://doc2.workerman.net/send-buffer-to-worker-fail.html
+2019-12-10 06:55:20 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://doc2.workerman.net/send-buffer-to-worker-fail.html
+2019-12-10 06:58:21 pid:1 Worker process terminated with ERROR: E_ERROR "Using $this when not in object context in C:\wamp\www\project\Gomoku\Applications\Gomoku\Events.php on line 91"
+2019-12-10 06:58:22 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://doc2.workerman.net/send-buffer-to-worker-fail.html
+2019-12-10 06:58:22 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://doc2.workerman.net/send-buffer-to-worker-fail.html
+2019-12-11 07:07:34 pid:1 Worker process terminated with ERROR: E_ERROR "Using $this when not in object context in C:\wamp\www\project\Gomoku\Applications\Gomoku\Events.php on line 91"
+2019-12-11 07:07:35 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://doc2.workerman.net/send-buffer-to-worker-fail.html
+2019-12-11 07:07:35 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://doc2.workerman.net/send-buffer-to-worker-fail.html
+2019-12-11 07:13:27 pid:1 Worker process terminated with ERROR: E_ERROR "Using $this when not in object context in C:\wamp\www\project\Gomoku\Applications\Gomoku\Events.php on line 91"
+2019-12-11 07:17:23 pid:1 Worker process terminated with ERROR: E_ERROR "Using $this when not in object context in C:\wamp\www\project\Gomoku\Applications\Gomoku\Events.php on line 57"
+2019-12-11 07:19:39 pid:1 Worker process terminated with ERROR: E_ERROR "Using $this when not in object context in C:\wamp\www\project\Gomoku\Applications\Gomoku\Events.php on line 57"
+2019-12-11 07:25:55 pid:1 exception 'Exception' with message '$message_data['room_id'] not set. client_ip:127.0.0.1 $message:{"type":"login"}' in C:\wamp\www\project\Gomoku\Applications\Gomoku\Events.php:56
+Stack trace:
+#0 [internal function]: Events::onMessage('7f00000108fc000...', '{"type":"login"...')
+#1 C:\wamp\www\project\Gomoku\vendor\workerman\gateway-worker\src\BusinessWorker.php(403): call_user_func('Events::onMessa...', '7f00000108fc000...', '{"type":"login"...')
+#2 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 C:\wamp\www\project\Gomoku\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #29)
+#5 C:\wamp\www\project\Gomoku\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 C:\wamp\www\project\Gomoku\vendor\workerman\workerman\Worker.php(2382): Workerman\Events\Select->loop()
+#7 C:\wamp\www\project\Gomoku\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#8 C:\wamp\www\project\Gomoku\vendor\workerman\workerman\Worker.php(1353): GatewayWorker\BusinessWorker->run()
+#9 C:\wamp\www\project\Gomoku\vendor\workerman\workerman\Worker.php(1296): Workerman\Worker::forkWorkersForWindows()
+#10 C:\wamp\www\project\Gomoku\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#11 C:\wamp\www\project\Gomoku\Applications\Gomoku\start_businessworker.php(32): Workerman\Worker::runAll()
+#12 {main}
+2019-12-11 07:25:55 pid:1 Worker process terminated
+2019-12-11 09:44:50 pid:1 Worker process terminated with ERROR: E_ERROR "Using $this when not in object context in C:\wamp\www\project\Gomoku\Applications\Gomoku\Room.php on line 16"
+2019-12-11 09:46:32 pid:1 Worker process terminated with ERROR: E_ERROR "Using $this when not in object context in C:\wamp\www\project\Gomoku\Applications\Gomoku\Room.php on line 16"
+2019-12-11 09:48:29 pid:1 Worker process terminated with ERROR: E_ERROR "Cannot access private property Room::$room_id in C:\wamp\www\project\Gomoku\Applications\Gomoku\Events.php on line 34"
+2019-12-11 09:48:30 pid:1 Worker process terminated with ERROR: E_ERROR "Cannot access private property Room::$room_id in C:\wamp\www\project\Gomoku\Applications\Gomoku\Events.php on line 34"
+2019-12-11 09:48:31 pid:1 Worker process terminated with ERROR: E_ERROR "Cannot access private property Room::$room_id in C:\wamp\www\project\Gomoku\Applications\Gomoku\Events.php on line 34"
+2019-12-11 09:48:32 pid:1 Worker process terminated with ERROR: E_ERROR "Cannot access private property Room::$room_id in C:\wamp\www\project\Gomoku\Applications\Gomoku\Events.php on line 34"
+2019-12-11 09:48:33 pid:1 Worker process terminated with ERROR: E_ERROR "Cannot access private property Room::$room_id in C:\wamp\www\project\Gomoku\Applications\Gomoku\Events.php on line 34"
+2019-12-11 09:49:08 pid:1 Worker process terminated with ERROR: E_ERROR "Access to undeclared static property: Room::$room_id in C:\wamp\www\project\Gomoku\Applications\Gomoku\Events.php on line 34"
+2019-12-11 09:49:09 pid:1 Worker process terminated with ERROR: E_ERROR "Access to undeclared static property: Room::$room_id in C:\wamp\www\project\Gomoku\Applications\Gomoku\Events.php on line 34"
+2019-12-11 09:49:10 pid:1 Worker process terminated with ERROR: E_ERROR "Access to undeclared static property: Room::$room_id in C:\wamp\www\project\Gomoku\Applications\Gomoku\Events.php on line 34"
+2019-12-11 09:50:43 pid:1 Worker process terminated with ERROR: E_ERROR "Access to undeclared static property: Room::$room_id in C:\wamp\www\project\Gomoku\Applications\Gomoku\Events.php on line 34"
+2019-12-11 09:51:32 pid:1 Worker process terminated with ERROR: E_ERROR "Using $this when not in object context in C:\wamp\www\project\Gomoku\Applications\Gomoku\Room.php on line 16"
+2019-12-12 02:49:36 pid:1 Worker process terminated with ERROR: E_PARSE "syntax error, unexpected '[', expecting ',' or ';' in C:\wamp\www\project\Gomoku\Applications\Gomoku\Room.php on line 9"
+2019-12-16 01:25:33 pid:1 Worker process terminated with ERROR: E_PARSE "syntax error, unexpected '}' in C:\wamp\www\project\Gomoku\Applications\Gomoku\Room.php on line 76"
+2019-12-17 06:09:14 pid:1 Worker process terminated with ERROR: E_ERROR "Uncaught exception 'Exception' with message 'closeCurrentClient can not be called in async context' in C:\wamp\www\project\Gomoku\vendor\workerman\gateway-worker\src\Lib\Gateway.php:831
+Stack trace:
+#0 C:\wamp\www\project\Gomoku\vendor\workerman\gateway-worker\src\Lib\Gateway.php(809): GatewayWorker\Lib\Gateway::closeCurrentClient(NULL)
+#1 C:\wamp\www\project\Gomoku\Applications\Gomoku\Room.php(46): GatewayWorker\Lib\Gateway::closeClient(NULL)
+#2 [internal function]: Room->{closure}('7f00000108fc000...', NULL)
+#3 C:\wamp\www\project\Gomoku\vendor\workerman\workerman\Events\Select.php(239): call_user_func_array(Object(Closure), Array)
+#4 C:\wamp\www\project\Gomoku\vendor\workerman\workerman\Events\Select.php(282): Workerman\Events\Select->tick()
+#5 C:\wamp\www\project\Gomoku\vendor\workerman\workerman\Worker.php(2382): Workerman\Events\Select->loop()
+#6 C:\wamp\www\project\Gomoku\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#7 C:\wamp\www\project\Gomoku\vendor\workerman\ in C:\wamp\www\project\Gomoku\vendor\workerman\gateway-worker\src\Lib\Gateway.php on line 831"
+2019-12-17 06:09:15 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://doc2.workerman.net/send-buffer-to-worker-fail.html
+2019-12-17 06:09:15 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://doc2.workerman.net/send-buffer-to-worker-fail.html
+2019-12-17 07:37:02 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2019-12-17 07:37:03 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2019-12-17 07:37:04 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2019-12-17 07:37:05 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2019-12-17 07:37:06 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2019-12-17 07:37:07 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2019-12-17 07:37:08 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2019-12-17 07:37:09 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2019-12-17 07:37:10 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2019-12-17 07:37:11 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2019-12-17 07:37:12 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2019-12-17 07:37:13 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2019-12-17 07:37:14 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2019-12-17 07:37:15 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2019-12-17 07:37:16 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2019-12-17 07:37:17 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2019-12-17 07:37:18 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2019-12-17 07:37:19 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2019-12-17 07:37:20 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2019-12-17 07:37:21 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2019-12-17 07:37:22 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2019-12-17 07:37:23 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2019-12-17 08:07:40 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2019-12-17 08:07:41 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2019-12-17 08:07:42 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2019-12-17 08:07:43 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2019-12-17 08:07:44 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2019-12-17 08:07:45 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2019-12-17 08:07:46 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2019-12-17 08:07:47 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2019-12-17 08:07:48 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2019-12-17 08:07:49 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2019-12-17 08:07:50 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2019-12-17 08:07:51 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2019-12-17 08:07:52 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2019-12-17 08:07:53 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2019-12-17 08:07:54 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2019-12-17 08:07:55 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2019-12-17 08:07:56 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2019-12-17 08:07:57 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2019-12-17 08:07:58 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2019-12-17 08:07:59 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2019-12-17 08:08:00 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2019-12-17 08:08:01 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2019-12-17 08:08:02 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2019-12-17 08:08:03 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2019-12-17 08:08:04 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2019-12-17 08:08:05 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2019-12-17 08:08:06 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2019-12-17 08:08:07 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2019-12-17 08:08:08 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2019-12-17 08:08:09 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2019-12-17 08:08:10 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2019-12-17 08:08:11 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2019-12-17 08:08:12 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2019-12-17 08:08:13 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2019-12-17 08:08:14 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2019-12-17 08:08:15 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2019-12-17 08:08:16 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2019-12-17 08:08:17 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2019-12-20 03:23:36 pid:1 Worker process terminated with ERROR: E_ERROR "Cannot access empty property in C:\wamp\www\project\Gomoku\Applications\Gomoku\Room.php on line 50"
+2019-12-20 03:23:37 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://doc2.workerman.net/send-buffer-to-worker-fail.html
+2019-12-20 03:23:37 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://doc2.workerman.net/send-buffer-to-worker-fail.html
+2020-02-26 08:09:12 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'Logic' not found in E:\Wamp\www\project\Gomoku\Applications\Gomoku\Events.php on line 36"
+2020-02-26 08:09:13 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'Logic' not found in E:\Wamp\www\project\Gomoku\Applications\Gomoku\Events.php on line 36"
+2020-02-26 08:09:14 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'Logic' not found in E:\Wamp\www\project\Gomoku\Applications\Gomoku\Events.php on line 36"
+2020-02-26 08:57:02 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'Gomoku' not found in E:\Wamp\www\project\Gomoku\Applications\Gomoku\Room.php on line 265"
+2020-02-26 08:57:03 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'Gomoku' not found in E:\Wamp\www\project\Gomoku\Applications\Gomoku\Room.php on line 265"
+2020-02-26 08:57:04 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'Gomoku' not found in E:\Wamp\www\project\Gomoku\Applications\Gomoku\Room.php on line 265"
+2020-02-26 08:57:05 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'Gomoku' not found in E:\Wamp\www\project\Gomoku\Applications\Gomoku\Room.php on line 265"
+2020-02-26 09:02:59 pid:1 Worker process terminated with ERROR: E_ERROR "Access to undeclared static property: Events::$room in E:\Wamp\www\project\Gomoku\Applications\Gomoku\Events.php on line 76"
+2020-02-26 09:18:54 pid:1 Worker process terminated with ERROR: E_RECOVERABLE_ERROR "Object of class Room could not be converted to string in E:\Wamp\www\project\Gomoku\vendor\workerman\gateway-worker\src\Lib\Context.php on line 131"
+2020-02-26 09:18:56 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://doc2.workerman.net/send-buffer-to-worker-fail.html
+2020-02-26 09:18:56 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://doc2.workerman.net/send-buffer-to-worker-fail.html
+2020-02-26 09:20:11 pid:1 Worker process terminated with ERROR: E_RECOVERABLE_ERROR "Object of class Room could not be converted to string in E:\Wamp\www\project\Gomoku\vendor\workerman\gateway-worker\src\Lib\Context.php on line 131"
+2020-02-26 09:20:32 pid:1 Worker process terminated with ERROR: E_ERROR "Uncaught exception 'Exception' with message 'closeCurrentClient can not be called in async context' in E:\Wamp\www\project\Gomoku\vendor\workerman\gateway-worker\src\Lib\Gateway.php:831
+Stack trace:
+#0 E:\Wamp\www\project\Gomoku\vendor\workerman\gateway-worker\src\Lib\Gateway.php(809): GatewayWorker\Lib\Gateway::closeCurrentClient(NULL)
+#1 E:\Wamp\www\project\Gomoku\Applications\Gomoku\Logic.php(148): GatewayWorker\Lib\Gateway::closeClient(NULL)
+#2 [internal function]: Logic->{closure}('7f00000108fc000...', 1, Array)
+#3 E:\Wamp\www\project\Gomoku\vendor\workerman\workerman\Events\Select.php(239): call_user_func_array(Object(Closure), Array)
+#4 E:\Wamp\www\project\Gomoku\vendor\workerman\workerman\Events\Select.php(282): Workerman\Events\Select->tick()
+#5 E:\Wamp\www\project\Gomoku\vendor\workerman\workerman\Worker.php(2382): Workerman\Events\Select->loop()
+#6 E:\Wamp\www\project\Gomoku\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#7 E:\Wamp\www\project\Gomoku\vendor\wor in E:\Wamp\www\project\Gomoku\vendor\workerman\gateway-worker\src\Lib\Gateway.php on line 831"
+2020-02-26 09:20:33 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://doc2.workerman.net/send-buffer-to-worker-fail.html
+2020-02-26 09:20:33 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://doc2.workerman.net/send-buffer-to-worker-fail.html
+2020-02-26 09:36:16 pid:1 Worker process terminated with ERROR: E_RECOVERABLE_ERROR "Object of class Room could not be converted to string in E:\Wamp\www\project\Gomoku\vendor\workerman\gateway-worker\src\Lib\Context.php on line 131"
+2020-02-26 10:08:01 pid:1 Worker process terminated with ERROR: E_PARSE "syntax error, unexpected 'if' (T_IF) in E:\Wamp\www\project\Gomoku\Applications\Gomoku\Logic.php on line 19"
+2020-02-26 10:08:02 pid:1 Worker process terminated with ERROR: E_PARSE "syntax error, unexpected 'if' (T_IF) in E:\Wamp\www\project\Gomoku\Applications\Gomoku\Logic.php on line 19"
+2020-02-26 10:08:03 pid:1 Worker process terminated with ERROR: E_PARSE "syntax error, unexpected 'if' (T_IF) in E:\Wamp\www\project\Gomoku\Applications\Gomoku\Logic.php on line 19"
+2020-03-02 03:08:39 pid:1 Worker process terminated with ERROR: E_ERROR "Call to a member function AI() on null in E:\Wamp\www\project\Gomoku\Applications\Gomoku\Logic.php on line 128"
+2020-03-04 09:42:39 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://doc2.workerman.net/send-buffer-to-worker-fail.html
+2020-03-04 09:42:39 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://doc2.workerman.net/send-buffer-to-worker-fail.html
+2020-05-23 13:04:14 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://doc2.workerman.net/send-buffer-to-worker-fail.html
+2020-05-23 13:04:14 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://doc2.workerman.net/send-buffer-to-worker-fail.html
+2020-05-23 13:05:12 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://doc2.workerman.net/send-buffer-to-worker-fail.html
+2020-05-23 13:05:12 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://doc2.workerman.net/send-buffer-to-worker-fail.html
+2020-05-23 13:05:57 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://doc2.workerman.net/send-buffer-to-worker-fail.html
+2020-05-23 13:05:57 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://doc2.workerman.net/send-buffer-to-worker-fail.html
+2020-05-23 14:02:19 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2020-05-23 14:02:20 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2020-05-23 14:02:21 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2020-05-23 14:02:22 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2020-05-23 14:02:23 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2020-05-23 14:02:24 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2020-05-23 14:02:25 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2020-05-23 14:02:26 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2020-05-23 14:02:27 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2020-05-23 14:02:28 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2020-05-23 14:02:29 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2020-05-23 14:02:30 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2020-05-23 14:02:31 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2020-05-23 14:02:32 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2020-05-23 14:02:33 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2020-05-23 14:02:34 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2020-05-23 14:02:51 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2020-05-23 14:02:52 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2020-05-23 14:02:53 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2020-05-23 14:02:54 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2020-05-23 14:02:55 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2020-05-23 14:02:56 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2020-05-23 14:02:57 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2020-05-23 14:02:58 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2020-05-23 14:02:59 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2020-05-23 14:03:00 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2020-05-23 14:03:01 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2020-05-23 14:03:02 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2020-05-23 14:03:03 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2020-05-23 14:03:04 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0
+2020-05-23 14:03:05 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:GomokuBusinessWorker:0

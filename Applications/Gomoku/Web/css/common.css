@@ -1,0 +1,131 @@
+html, body{
+  margin: 0;
+  padding: 0;
+}
+*::selection {
+    color: rgb(247, 247, 247);
+    background: #e6b1ba;
+}
+*::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+*::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+*::-webkit-scrollbar-thumb {
+    background: #e6b1ba;
+}
+.content{
+  width: 1000px;
+  height: 100px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 80px;
+}
+.text-overflow{
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+@media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) { 
+  .text-gradient{
+    background-image: -webkit-linear-gradient(left, #10af7e, #E6D205 25%, #147B96 50%, #E6D205 75%, #147B96);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-background-size: 200% 100%;
+    -webkit-animation: text-animation 4s infinite linear;
+  }
+}
+@-webkit-keyframes text-animation {
+  0%  { background-position: 0 0;}
+  100% { background-position: -100% 0;}
+}
+.clear:after,.clear:before{
+  content: '';
+  display: block;
+  clear: both;
+}
+.nav{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #10af7e;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.nav li {
+    float: left;
+}
+
+.nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav li a:hover:not(.active) {
+    background-color: #44bb96;
+}
+
+.javan-ads{
+  background: #e2e2e2;
+  text-align: center;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+.tab{
+  background: #23a299;
+  display: flex;
+  margin-bottom: 20px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.tab .li{
+  line-height: 36px;
+  list-style: none;
+  flex: 1;
+  border-right: 1px solid #f2f2f2;
+  text-align: center;
+}
+
+.tab .li a{
+  color: #fff;
+}
+
+.tab .li.active{
+  background: #087d75;
+}
+.tab .li:last-child{
+  border-right:none;
+}
+.tab .li:hover{
+  background: #087d75;
+}
+
+.swiper-container .swiper-button-prev, .swiper-container .swiper-button-next{
+  background: url('../images/button.png');
+  width: 45px;
+  height: 45px;
+}
+.swiper-container .swiper-button-prev:hover, .swiper-container .swiper-button-next:hover{
+  background: url('../images/button_c.png');
+}
+.swiper-container .swiper-button-next{
+  transform: rotate(180deg)
+}
+.download a{
+  color: #fff;
+  background: #10af7e;
+  padding: 8px 15px;
+  text-decoration: none;
+}
+.download a:hover{
+  background: #19a586;
+}

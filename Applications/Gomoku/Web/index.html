@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="Keywords" content="五子棋,游戏"/>
+    <meta name="Description" content="五子棋人机大战,最强大脑就是你"/>
+    <title>五子棋(最强大脑就是你)</title>
+    <meta name="name" content="Javan"/>
+    <script type="text/javascript" src="./js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="./js/layer.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/layer.css">
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+</head>
+<body>
+<ul class="nav" id="nav"></ul>
+<div class="chess-content">
+    <div class="choose">
+        <img src="images/bg.jpg" alt="" width="100%">
+        <div class="choose-lv">
+            <div class="levl">简单</div>
+            <div class="levl">中级</div>
+            <div class="levl">高级</div>
+        </div>
+    </div>
+    <div class="choose_shade"></div>
+    <div class="player">
+        <div class="baiqi"><img src="images/baiqi.png" alt=""></div>
+        <div class="tips" id="tips">等待玩家进入</div>
+        <div class="heiqi"><img src="images/heiqi.png" alt=""></div>
+        <div class="clear"></div>
+    </div>
+    <div class="checkerboard">
+        <canvas id="chess" width="450px" height="450px"></canvas>
+        <canvas id="chess_board" width="450px" height="450px"></canvas>
+        <canvas id="chess_pointer" width="450px" height="450px"></canvas>
+    </div>
+    <div class="black"><img src="" alt=""></div>
+    <div></div>
+</div>
+
+</body>
+</html>
+<script type="text/javascript" src="./js/script.js"></script>
+<script type="text/javascript">
+    var connect = function () {
+        ws = new WebSocket("ws://127.0.0.1:9292");
+        ws.onopen = function () {
+            if (!complexity) {
+                ws.send('{"event":"login","roomId":0,"my":0,"complexity":0}');
+            } else {
+                ws.send('{"event":"login","roomId":0,"my":0,"complexity":' + complexity + '}');
+            }
+        };
+
+        ws.onmessage = onmessage;
+        ws.onclose = function () {
+            console.log("连接关闭，定时重连");
+        };
+        ws.onerror = function () {
+            console.log("出现错误");
+        };
+
+        // 服务端发来消息时
+        function onmessage(e) {
+            console.log(e.data);
+            var data = JSON.parse(e.data);
+            switch (data['event']) {
+                // 服务端ping客户端
+                case 'ping':
+                    ws.send('{"event":"pong","roomId":' + roomId + ',"my":' + my + '}');
+                    break;
+                case 'login':
+                    roomId = data['roomId'];
+                    my = data['my'];
+                    break;
+                case 'move':
+                    moveLater(data['x'], data['y']);
+                    break;
+                case 'gameBegin':
+                    gameBegin();
+                    break;
+                case 'DownState':
+                    if (data['state'] == 2) {
+                        gameover(data['type']);
+                    } else if (data['state'] == 0) {
+                        if (data['type'] == 5) {
+                            //格子被占
+                            $('#tips').html('该格被占，请点击没有棋子的格子。');
+                        } else if (data['type'] == 8) {
+                            gameover(data['type']);
+                        }
+                    }
+                    break;
+            }
+            ;
+        };
+    }
+</script>
+<script>
+    var a = Math.floor(Math.random() * 4) + 1;
+    $('.black img').attr('src', 'images/p' + a + '.png');
+    $('.black').addClass("b_img" + a + "");
+
+    var w = $('.choose').width();
+    setTimeout(function () {
+        $('.choose').css({
+            'margin-left': '-' + w / 2 + 'px'
+        });
+    }, 500)
+</script>
